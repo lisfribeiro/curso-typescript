@@ -50,3 +50,65 @@ let carro = 'BMW';
 console.log(carro);
 carro = { marca: 'BMW', ano: 2019 };
 console.log(carro);
+// função
+function retornaMeuNome() {
+    return nome;
+}
+console.log(retornaMeuNome());
+function digaOi() {
+    console.log("Oi");
+    // return minhaIdade
+}
+digaOi();
+function multiplicar(numA, numB) {
+    return numA * numB;
+}
+console.log(multiplicar(2, 2));
+// tipo função
+let calculo;
+// calculo = digaOi
+// calculo()
+calculo = multiplicar;
+console.log(calculo(5, 6));
+// objetos
+let usuario = {
+    nome: 'João',
+    idade: 27
+};
+console.log(usuario);
+// usuario = {}
+// usuario = {
+//     name: 'Maria',
+//     age: 21
+// }
+usuario = {
+    idade: 31,
+    nome: 'Maria'
+};
+console.log(usuario);
+// Desafio 
+let funcionario = {
+    supervisores: ["Ana", "Fernando"],
+    baterPonto(horas) {
+        if (horas <= 8) {
+            return "Ponto normal";
+        }
+        else {
+            return "Fora do horário";
+        }
+    }
+};
+console.log(funcionario.supervisores);
+console.log(funcionario.baterPonto(8));
+console.log(funcionario.baterPonto(9));
+let funcionario2 = {
+    supervisores: ["Bia", "Carlos"],
+    baterPonto(horas) {
+        if (horas <= 8) {
+            return "Ponto normal";
+        }
+        else {
+            return "Fora do horário";
+        }
+    }
+};
